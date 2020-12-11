@@ -10,5 +10,5 @@ HUGO_ENABLEGITINFO = "true"
 [context.deploy-preview]
 command = "GIT_COMMIT_SHA=`git rev-parse --verify HEAD` GIT_COMMIT_SHA_SHORT=`git rev-parse --short HEAD` hugo  --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
 
-[context.deploy-preview.environment]
+[context.deploy-taskslists.environment]
 HUGO_VERSION = "0.53"
